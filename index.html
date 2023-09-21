@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>jewellery_website</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    
+</head>
+<body>
+    <section class="header" id="header">
+        <div class="nav-bar">
+            <div class="logo">
+                <a href="#">Jewellery</a>
+            </div>
+            <div class="menu">
+                <ul>
+                <li><a href="#" class="active">Jewellerys</a></li>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Technology</a></li>
+                <li><a href="#">Production</a></li>
+                <li><a href="#">Reviews</a></li>
+                </ul>
+            </div>
+            <div class="social-media"><ul>
+                <i><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></i>
+                <i><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></i>
+                <i><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></i>
+                <i><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></i>
+                </ul>
+            </div>
+        </div>
+        <div class="hero">
+            <div class="row">
+                <div class="left-sec">
+                    <div class="content">
+                        <h2><span>Save Upto 50%J</span></h2>
+                        <p>Happiness Comes In The Box Of Jewellery</p>
+                    </div>
+                    <button class="discover-btn">
+                        <a href="#">discover</a><span><i class="fa fa-arrow-circle-o-right"></i></span>
+                    </button>
+                    <div class="information">
+                        <div class="production">
+                            <p>Production</p>
+                            <h2>1992-2023</h2>
+                        </div>
+                        <div class="production">
+                            <p>Designer</p>
+                            <h2>Radhika</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-sec">
+                    <div class="my-jew">
+                        <div><img src="img/1.jpg" alt=" "></div>
+                        <div><img src="img/2.jpeg" alt=" "></div>
+                        <div><img src="img/3.jpeg" alt=" "></div>
+                        <div><img src="img/4.jpeg" alt=" "></div>
+                        <div><img src="img/5.jpeg" alt=" "></div>
+                        <div><img src="img/6.jpeg" alt=" "></div>
+                        <div><img src="img/7.jpeg" alt=" "></div>
+                        <div><img src="img/8.jpeg" alt=" "></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".my-jew").slick({
+                autoplay:true,
+                dots:true,
+                speed:1000,
+                customPaging:function(slider,i) {
+                    var thumb=$(slider.$slides[i]).data();
+                    return'<a>'+(i+1)+'</a>';
+                },
+
+            })
+        });
+    </script>
+</body>
+</html>
